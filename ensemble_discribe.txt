@@ -1,0 +1,26 @@
+129 g geopotential
+130 ta air_temperature
+*131 ua eastward_wind 850hPa
+132 va northward_wind
+133 hus specific_humidity ±ÈÊª
+*139 ts surface_temperature
+141 snld lwe_thickness_of_surface_snow_amount
+146 hfssd surface_downward_sensible_heat_flux
+147 hflsd surface_downward_latent_heat_flux
+151 psl air_pressure_at_sea_level
+164 clt cloud_area_fraction
+165 uas eastward_wind_near_surface
+166 vas northward_wind_near_surface
+167 tas near-surface air_temperature 
+168 tdps near-surface dewpoint temperature
+169 rsds surface_downwelling_shortwave_flux_in_air
+175 rlds surface_downwelling_longwave_flux_in_air
+176 rss surface_net_downward_shortwave_flux
+177 rls surface_net_downward_longwave_flux
+178 rst toa_net_downward_shortwave_flux
+179 rlut toa_net_downward_longwave_flux
+182 evlwr lwe_water_evaporation_rate
+201 tasmax max_air_temperature
+202 tasmin min_air_temperature
+*228 prlr lwe_thickness_of_precipitation_amount
+229 mrsov volume_fraction_of_water_in_soil

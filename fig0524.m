@@ -1,0 +1,42 @@
+figure(1)
+
+subplot(2,2,1)
+[lon,lat]=meshgrid([0:2.5:357.5],[90:-2.5:-90]);
+m_proj('Equidistant','longitudes',[0 357.5], 'latitudes',[-90 90]);
+m_coast('color','k');
+m_grid('FontSize',6);
+title('Obs');
+hold on;
+[c,h]=m_contourf(lon,lat,DELTA_O(:,:,43),6,'LineWidth',1,'LineColor','k');
+clabel(c,h,'Fontsize', 8);
+set(gca, 'Fontname', 'Times New Roman', 'Fontsize', 10);
+subplot(2,2,2);
+[lon,lat]=meshgrid([0:2.5:357.5],[90:-2.5:-90]);
+m_proj('Equidistant','longitudes',[0 357.5], 'latitudes',[-90 90]);
+m_coast('color','k');
+m_grid('FontSize',6);
+title('CM');
+hold on;
+[c,h]=m_contourf(lon,lat,DELTA_E(:,:,43),6,'LineWidth',1,'LineColor','k');
+clabel(c,h,'Fontsize', 8);
+set(gca, 'Fontname', 'Times New Roman', 'Fontsize', 10);
+subplot(2,2,3);
+[lon,lat]=meshgrid([0:2.5:357.5],[90:-2.5:-90]);
+m_proj('Equidistant','longitudes',[0 357.5], 'latitudes',[-90 90]);
+m_coast('color','k');
+m_grid('FontSize',6);
+title('WZZM');
+hold on;
+[c,h]=m_contourf(lon,lat,DELTA_W(:,:,42),6,'LineWidth',1,'LineColor','k');
+clabel(c,h,'Fontsize', 8);
+set(gca, 'Fontname', 'Times New Roman', 'Fontsize', 10);
+subplot(2,2,4);
+[lon,lat]=meshgrid([0:2.5:357.5],[90:-2.5:-90]);
+m_proj('Equidistant','longitudes',[0 357.5], 'latitudes',[-90 90]);
+m_coast('color','k');
+m_grid('FontSize',6);
+title('WZZM*');
+hold on;
+[c,h]=m_contourf(lon,lat,DELTA_DY(:,:,42),6,'LineWidth',1,'LineColor','k');
+clabel(c,h,'Fontsize', 8);
+set(gca, 'Fontname', 'Times New Roman', 'Fontsize', 10);
